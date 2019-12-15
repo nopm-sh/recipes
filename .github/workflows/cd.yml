@@ -16,4 +16,4 @@ jobs:
         url: https://nombda.pikacode.com
         hook: nopm-sh
         action: update-recipes
-        token: ${{ secrets.NOMBDA_TOKEN }}
+        nombda_token: ${{ secrets.NOMBDA_TOKEN }}
