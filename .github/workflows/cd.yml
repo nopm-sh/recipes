@@ -1,0 +1,19 @@
+name: Go
+on:
+  push:
+    branches:
+      - master
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: deploy recipes
+      uses: bjorand/nombda-github-action@master
+      with:
+        url: https://nombda.pikacode.com
+        hook: nopm-sh
+        action: update-recipes
+        token: ${{ secrets.NOMBDA_TOKEN }}
