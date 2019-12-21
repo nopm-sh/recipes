@@ -9,7 +9,8 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-
+    - name: Shellcheck
+      uses: ludeeus/action-shellcheck@master
     - name: deploy recipes
       uses: bjorand/nombda-github-action@master
       with:

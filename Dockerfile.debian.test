@@ -1,0 +1,7 @@
+FROM debian
+
+RUN apt-get update && apt-get -y install make curl shellcheck
+
+COPY . .
+
+RUN make test
