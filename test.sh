@@ -22,6 +22,7 @@ do
 
   echo "Installing recipe $recipeName"
   INTERACTIVE=no bash "$recipe"
+  echo $?
 
   echo "Testing recipe $recipeName"
   # shellcheck source=/dev/null
